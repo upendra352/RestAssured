@@ -19,6 +19,9 @@ public class Deserialization {
 		Person person=objectMapper.readValue(jsonResponse, Person.class);
 		System.out.println(person.getName());
 		System.out.println(person.getAge());
+		System.out.println(person);//serializationdeserialization.Person@62fdb4a6
+		
+		// to overcome that error need to override toString method in Person class.(right click -> source ->Generate toString 
 
 		
 //		by using Map	
